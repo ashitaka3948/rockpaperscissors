@@ -10,11 +10,41 @@ function getComputerChoice() {
 }
 // console.log(getComputerChoice());
 
+/* 
 function getHumanChoice() {
   let choice = prompt("What's your choice? ");
   return choice;
 }
+*/
 // console.log(getHumanChoice());
+
+/*
+const rockButton = document.querySelector("#rockButton");
+const paperButton = document.querySelector("#paperButton");
+const scissorsButton = document.querySelector("#scissorsButton");
+*/
+const computerSelection = getComputerChoice();
+let humanSelection;
+
+const buttons = document.querySelectorAll("button");
+
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    humanSelection = button.id;
+  });
+});
+
+/*
+rockButton.addEventListener("click", function (e) {
+  humanSelection = "rock";
+});
+paperButton.addEventListener("click", function (e) {
+  humanSelection = "paper";
+});
+scissorsButton.addEventListener("click", function (e) {
+  humanSelection = "scissors";
+})
+*/
 
 let humanScore = 0;
 let computerScore = 0;
@@ -59,6 +89,7 @@ function displayScore() {
   console.log("Current score: Human " + humanScore + "  Computer " + computerScore);
 }
 
+/* 
 function playGame() {
 
   for (let i = 1; i <= 5; i++) {
@@ -77,3 +108,4 @@ function playGame() {
 }
 
 playGame();
+*/
