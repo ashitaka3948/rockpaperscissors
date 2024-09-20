@@ -8,23 +8,7 @@ function getComputerChoice() {
     return "scissors";
   }
 }
-// console.log(getComputerChoice());
 
-/* 
-function getHumanChoice() {
-  let choice = prompt("What's your choice? ");
-  return choice;
-}
-*/
-// console.log(getHumanChoice());
-
-/*
-const rockButton = document.querySelector("#rockButton");
-const paperButton = document.querySelector("#paperButton");
-const scissorsButton = document.querySelector("#scissorsButton");
-*/
-// const computerSelection = getComputerChoice();
-// let humanSelection = 0;
 const buttons = document.querySelectorAll("button");
 const score = document.querySelector("#results");
 const comments = document.querySelector("#comments");
@@ -85,23 +69,3 @@ function displayScore() {
     winner.textContent = "You lost.  You fucking suck.";
   }
 }
-/*
-function playGame() {
-
-  for (let i = 1; i <= 5; i++) {
-  //  const humanSelection = getHumanChoice();
-    const computerSelection = getComputerChoice();
-    playRound(humanSelection, computerSelection);
-  }
-
-  if (humanScore > computerScore) {
-    console.log("You win you lucky bastard.");
-  } else if (computerScore > humanScore) {
-    console.log("You suck shit.  You fucking lost.");
-  } else {
-    console.log("It's a draw.  So on9.");
-  }
-}
-
-playGame();
-*/
